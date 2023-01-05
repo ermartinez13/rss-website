@@ -1,5 +1,6 @@
 import { MouseEventHandler, useState } from 'react'
 import { MobileContent } from './MobileContent'
+import { MobileOverlay } from './MobileOverlay'
 
 export function Header() {
   const [showOverlay, setShowOverlay] = useState(false)
@@ -9,7 +10,8 @@ export function Header() {
   }
 
   return (
-    <header>
+    <header className='relative z-50 bg-[#20084E]'>
+      <MobileOverlay />
       <MobileContent showOverlay={showOverlay} handleClick={handleClick} />
     </header>
   )

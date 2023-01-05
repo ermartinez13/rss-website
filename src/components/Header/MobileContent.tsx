@@ -9,7 +9,7 @@ interface Props {
 
 export function MobileContent({ showOverlay, handleClick }: Props) {
   return (
-    <div className='flex justify-between px-4 py-6 md:px-10 lg:hidden'>
+    <div className='relative flex justify-between px-4 py-6 md:px-10 lg:hidden'>
       <Link href='/'>
         <span className='sr-only'>Rey Software Solutions</span>
         <span className='fill-white'>
