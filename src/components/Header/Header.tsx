@@ -8,6 +8,9 @@ export function Header() {
 
   const handleClick: MouseEventHandler<HTMLButtonElement> = () => {
     setShowOverlay(!showOverlay)
+    if (ref.current) {
+      ref.current.style.height = showOverlay ? '0' : '100vh'
+    }
   }
 
   return (
