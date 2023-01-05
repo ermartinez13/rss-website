@@ -1,13 +1,13 @@
 import Link from 'next/link'
-import { Dispatch, SetStateAction } from 'react'
+import { MouseEventHandler } from 'react'
 import { Logo } from '../Logo'
 
 interface Props {
   showOverlay: boolean
-  setShowOverlay: Dispatch<SetStateAction<boolean>>
+  handleClick: MouseEventHandler<HTMLButtonElement>
 }
 
-export function MobileContent({ showOverlay, setShowOverlay }: Props) {
+export function MobileContent({ showOverlay, handleClick }: Props) {
   return (
     <div className='flex justify-between px-4 py-6 md:px-10 lg:hidden'>
       <Link href='/'>
@@ -19,7 +19,7 @@ export function MobileContent({ showOverlay, setShowOverlay }: Props) {
       <button
         className='fill-white stroke-white w-10'
         type='button'
-        onClick={() => setShowOverlay((value) => !value)}
+        onClick={handleClick}
       >
         {showOverlay ? <XIcon /> : <HamburgerIcon />}
       </button>
