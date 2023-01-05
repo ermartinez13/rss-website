@@ -1,3 +1,9 @@
+import { MobileContent } from './MobileContent'
+
 export function Header() {
-  return <header></header>
+  return (
+    <header>
+      <MobileContent />
+    </header>
+  )
 }
