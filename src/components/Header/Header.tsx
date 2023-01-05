@@ -6,7 +6,10 @@ export function Header() {
 
   return (
     <header>
-      <MobileContent />
+      <MobileContent
+        showOverlay={showOverlay}
+        setShowOverlay={setShowOverlay}
+      />
     </header>
   )
 }
