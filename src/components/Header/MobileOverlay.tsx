@@ -8,7 +8,7 @@ export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
 
   return (
     <div
-      className={`fixed z-10 inset-x-0 top-0 ${height} bg-[#20084E] duration-500 lg:hidden overflow-y-hidden`}
+      className={`fixed z-10 inset-x-0 top-0 ${height} bg-[#20084E] duration-500 lg:hidden overflow-y-auto`}
     >
       <div
         className={`relative h-screen pt-32 flex flex-col items-center justify-between ${translate} duration-500`}
