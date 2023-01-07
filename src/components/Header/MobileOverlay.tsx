@@ -11,7 +11,7 @@ export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
       className={`fixed z-10 inset-x-0 top-0 ${height} bg-[#20084E] duration-500 lg:hidden overflow-y-hidden`}
     >
       <div
-        className={`relative h-full pt-32 flex flex-col items-center justify-between ${translate} duration-500`}
+        className={`relative h-screen pt-32 flex flex-col items-center justify-between ${translate} duration-500`}
       >
         <div className='w-full'>
           <nav>
