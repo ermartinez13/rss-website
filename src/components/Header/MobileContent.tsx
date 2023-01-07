@@ -24,6 +24,7 @@ export function MobileContent({ showOverlay, handleClick }: Props) {
         type='button'
         onClick={handleClick}
       >
+        <span className='sr-only'>Toggle Mobile Menu Icon</span>
         {showOverlay ? <XIcon /> : <HamburgerIcon />}
       </button>
     </div>
