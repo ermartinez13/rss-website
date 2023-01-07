@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { SocialIcons } from '../SocialIcons'
 import { ThemeToggle } from './ThemeToggle'
 
 export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
@@ -41,6 +42,9 @@ export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
           <button className='w-full fill-white px-4 py-2 text-center flex items-center justify-center'>
             <ThemeToggle height={52} width={52} />
           </button>
+        </div>
+        <div className='w-full mt-8'>
+          <SocialIcons />
         </div>
       </div>
     </div>
