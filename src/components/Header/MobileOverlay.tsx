@@ -18,7 +18,7 @@ export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
             <ul className='space-y-8'>
               <li>
                 <Link
-                  className='block px-4 py-2 text-white text-center text-[1.75rem]'
+                  className='block px-4 py-2 text-white text-center text-[1.75rem] hover:opacity-50'
                   href='#'
                 >
                   Home
@@ -26,7 +26,7 @@ export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
               </li>
               <li>
                 <Link
-                  className='block px-4 py-2 text-white text-center text-[1.75rem]'
+                  className='block px-4 py-2 text-white text-center text-[1.75rem] hover:opacity-50'
                   href='#'
                 >
                   Contact
@@ -34,7 +34,7 @@ export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
               </li>
               <li>
                 <Link
-                  className='block px-4 py-2 text-white text-center text-[1.75rem]'
+                  className='block px-4 py-2 text-white text-center text-[1.75rem] hover:opacity-50'
                   href='#'
                 >
                   Español
@@ -43,7 +43,7 @@ export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
             </ul>
           </nav>
           <div className='w-full mt-8'>
-            <button className='w-full fill-white px-4 py-2 text-center flex items-center justify-center'>
+            <button className='w-full fill-white px-4 py-2 text-center flex items-center justify-center hover:opacity-50'>
               <ThemeToggle height={52} width={52} />
             </button>
           </div>

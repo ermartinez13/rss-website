@@ -6,15 +6,18 @@ export function SocialIcons() {
       <SocialIcon
         url='https://www.linkedin.com/in/ermartinez13/'
         style={{ width: '39px', height: '39px' }}
+        className='hover:opacity-50'
       />
       <SocialIcon
         url='https://github.com/ermartinez13'
         style={{ width: '39px', height: '39px' }}
         bgColor='#fff'
+        className='hover:opacity-50'
       />
       <SocialIcon
         url='https://www.instagram.com/ermartinez13/'
         style={{ width: '39px', height: '39px' }}
+        className='hover:opacity-50'
       />
     </div>
   )
