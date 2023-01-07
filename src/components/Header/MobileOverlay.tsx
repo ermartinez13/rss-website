@@ -3,7 +3,7 @@ export function MobileOverlay({ showOverlay }: { showOverlay: boolean }) {
 
   return (
     <div
-      className={`fixed inset-0 w-screen ${height} bg-[#20084E] duration-500 lg:hidden overflow-y-hidden`}
+      className={`fixed z-10 inset-0 w-screen ${height} bg-[#20084E] duration-500 lg:hidden overflow-y-hidden`}
     ></div>
   )
 }

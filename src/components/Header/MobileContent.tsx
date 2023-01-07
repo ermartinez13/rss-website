@@ -11,7 +11,7 @@ export function MobileContent({ showOverlay, handleClick }: Props) {
   const border = showOverlay ? 'border-white' : 'border-transparent'
   return (
     <div
-      className={`relative flex justify-between px-4 py-6 md:px-10 lg:hidden border-b-2 ${border} duration-500`}
+      className={`relative z-20 flex justify-between px-4 py-6 md:px-10 lg:hidden border-b-2 ${border} duration-500 bg-[#20084E]`}
     >
       <Link href='/'>
         <span className='sr-only'>Rey Software Solutions</span>

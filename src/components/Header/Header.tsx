@@ -10,7 +10,7 @@ export function Header() {
   }
 
   return (
-    <header className='relative bg-[#20084E]'>
+    <header className='relative '>
       <MobileOverlay showOverlay={showOverlay} />
       <MobileContent showOverlay={showOverlay} handleClick={handleClick} />
     </header>
