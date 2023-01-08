@@ -7,17 +7,20 @@ export function SocialIcons() {
         url='https://www.linkedin.com/in/ermartinez13/'
         style={{ width: '39px', height: '39px' }}
         className='hover:opacity-50'
+        target='_blank'
       />
       <SocialIcon
         url='https://github.com/ermartinez13'
         style={{ width: '39px', height: '39px' }}
         bgColor='#fff'
         className='hover:opacity-50'
+        target='_blank'
       />
       <SocialIcon
         url='https://www.instagram.com/ermartinez13/'
         style={{ width: '39px', height: '39px' }}
         className='hover:opacity-50'
+        target='_blank'
       />
     </div>
   )
