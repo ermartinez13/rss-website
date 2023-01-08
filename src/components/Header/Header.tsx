@@ -5,14 +5,28 @@ import { MobileOverlay } from './MobileOverlay'
 export function Header() {
   const [showOverlay, setShowOverlay] = useState(false)
 
-  const handleClick: MouseEventHandler<HTMLButtonElement> = () => {
-    setShowOverlay((state) => !state)
+  const openClosedOverlay: MouseEventHandler<HTMLButtonElement> = () => {
+    if (showOverlay === false) {
+      setShowOverlay(true)
+    }
+  }
+
+  const closeOpenedOverlay: MouseEventHandler<HTMLHeadingElement> = (e) => {
+    if (showOverlay === true && e.target instanceof Element) {
+      const tagName = e.target.tagName
+      const excludedElements = ['DIV', 'UL']
+      if (excludedElements.includes(tagName)) return
+      setShowOverlay(false)
+    }
   }
 
   return (
-    <header className='relative '>
+    <header className='relative ' onClick={closeOpenedOverlay}>
       <MobileOverlay showOverlay={showOverlay} />
-      <MobileContent showOverlay={showOverlay} handleClick={handleClick} />
+      <MobileContent
+        showOverlay={showOverlay}
+        onButtonClick={openClosedOverlay}
+      />
     </header>
   )
 }

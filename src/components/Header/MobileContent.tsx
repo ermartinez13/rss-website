@@ -4,10 +4,10 @@ import { Logo } from '../Logo'
 
 interface Props {
   showOverlay: boolean
-  handleClick: MouseEventHandler<HTMLButtonElement>
+  onButtonClick: MouseEventHandler<HTMLButtonElement>
 }
 
-export function MobileContent({ showOverlay, handleClick }: Props) {
+export function MobileContent({ showOverlay, onButtonClick }: Props) {
   const border = showOverlay ? 'border-white' : 'border-transparent'
   return (
     <div
@@ -22,7 +22,7 @@ export function MobileContent({ showOverlay, handleClick }: Props) {
       <button
         className='fill-white stroke-white w-10'
         type='button'
-        onClick={handleClick}
+        onClick={onButtonClick}
       >
         <span className='sr-only'>Toggle Mobile Menu Icon</span>
         {showOverlay ? <XIcon /> : <HamburgerIcon />}
