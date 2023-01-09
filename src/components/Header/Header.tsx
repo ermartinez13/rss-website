@@ -1,4 +1,5 @@
 import { MouseEventHandler, useState } from 'react'
+import { DesktopContent } from './DesktopContent'
 import { MobileContent } from './MobileContent'
 import { MobileOverlay } from './MobileOverlay'
 
@@ -23,6 +24,7 @@ export function Header() {
   return (
     <header className='relative ' onClick={closeOpenedOverlay}>
       <MobileOverlay showOverlay={showOverlay} />
+      <DesktopContent />
       <MobileContent
         showOverlay={showOverlay}
         onButtonClick={openClosedOverlay}
