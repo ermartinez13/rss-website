@@ -11,22 +11,24 @@ export function MobileContent({ showOverlay, onButtonClick }: Props) {
   const border = showOverlay ? 'border-white' : 'border-transparent'
   return (
     <div
-      className={`relative z-20 flex justify-between px-4 py-6 md:px-10 lg:hidden border-b-2 ${border} duration-500 bg-[#20084E]`}
+      className={`relative z-20 px-safe lg:hidden border-b-2 ${border} duration-500 bg-[#20084E]`}
     >
-      <Link href='/'>
-        <span className='sr-only'>Rey Software Solutions</span>
-        <span className='fill-white'>
-          <Logo height={61} width={94} />
-        </span>
-      </Link>
-      <button
-        className='fill-white stroke-white w-10'
-        type='button'
-        onClick={onButtonClick}
-      >
-        <span className='sr-only'>Toggle Mobile Menu Icon</span>
-        {showOverlay ? <XIcon /> : <HamburgerIcon />}
-      </button>
+      <div className='flex justify-between px-4 py-6 md:px-10'>
+        <Link href='/'>
+          <span className='sr-only'>Rey Software Solutions</span>
+          <span className='fill-white'>
+            <Logo height={61} width={94} />
+          </span>
+        </Link>
+        <button
+          className='fill-white stroke-white w-10'
+          type='button'
+          onClick={onButtonClick}
+        >
+          <span className='sr-only'>Toggle Mobile Menu Icon</span>
+          {showOverlay ? <XIcon /> : <HamburgerIcon />}
+        </button>
+      </div>
     </div>
   )
 }
