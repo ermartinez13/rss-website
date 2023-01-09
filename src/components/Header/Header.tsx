@@ -22,7 +22,7 @@ export function Header() {
   }
 
   return (
-    <header className='relative ' onClick={closeOpenedOverlay}>
+    <header className='relative bg-[#20084E]' onClick={closeOpenedOverlay}>
       <MobileOverlay showOverlay={showOverlay} />
       <DesktopContent />
       <MobileContent
