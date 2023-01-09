@@ -28,7 +28,7 @@ export function DesktopContent() {
               </li>
               <li>
                 <Link
-                  className=' text-white text-center text-[1.75rem] hover:opacity-50'
+                  className='px-3 pt-2 pb-2.5 border-[3px] border-[#5CFFE4] rounded-[2rem] text-white text-center text-[1.75rem] hover:bg-[#5CFFE4] hover:text-[#20084E]'
                   href='#'
                 >
                   Send Message
